@@ -1,0 +1,5 @@
+phone_db
+
+An Online Phone database management.
+
+'phone_db' will make use of LAMP for management of names, phone numbers, etc.
