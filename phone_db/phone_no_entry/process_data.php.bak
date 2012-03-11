@@ -1,0 +1,237 @@
+<?php
+/*
+  Program name: process_data.php
+  Description: Program checks all the form fields for
+  blank fields.
+*/
+session_start();
+if (@$_SESSION["auth"] != "yes")
+  {
+    header("Location: ../login.php");
+    exit();
+  }
+else 
+  require("../user/header.php");
+?>
+<?php
+/* setup array */
+include ("array.php");  
+/* check for blank $fields */
+foreach($_POST as $field => $value)
+  {
+    if ($field != "mid_name" and $field != "landline")
+      {
+	if ($value == "")
+	  {
+	    $blanks[] = $field;
+	  }
+      }
+  }
+/* if(isset($blanks)) CODE */
+/* check for input pattern */
+foreach($_POST as $field => $value)
+  {
+    if(!empty($value))
+      {
+	if($field == "first_name" or $field == "mid_name" or $field == "last_name") 
+	  {
+	    if (!ereg("^[A-Za-z' -]{1,50}$",$value))
+	      {
+		$errors[]=$field;
+	      }
+	  }
+	if($field == "mob")
+	  {
+	    if(!ereg("^[0-9)xX( -]{6,10}$",$value))
+	      {
+		$errors[] = $field;
+	      }
+	  }
+	if($field == "landline")
+	  {
+	    if(!ereg("^[0-9)xX( -]{6,20}$",$value))
+	      {
+		$errors[] = $field;
+		$err = $field;
+	      }
+	  }
+      } // end if empty
+  } // end foreach
+/* if(@is_array($errors)) CODE */
+foreach($_POST as $field => $value)
+  {
+    if ($field == "landline")
+      {
+	if ($value == NULL)
+	  {
+	    $null[] = $field;
+	  }
+      }
+  }
+$size_of_null = sizeof($null);
+echo "size of null : $size_of_null<br>";
+if(@sizeof($null) == 0 AND $err != landline)
+  {
+    include("misc.inc");
+    $cxn = mysqli_connect($host,$user,$passwd,$dbname)
+      or die("cannot connect to mysql db");
+    $sql2="SELECT * FROM phone_book
+  	WHERE landline is not NULL AND landline LIKE '%$_POST[landline]%'";
+    $result2=mysqli_query($cxn,$sql2)
+      or die("Couldn't execute search query.");
+    $num2=mysqli_num_rows($result2);
+    echo "<br> Residential : $_POST[landline]<br>";
+  }
+if($num2 > 0)
+  {
+    echo "Residential Number is matching !" ;
+  }
+
+
+echo $err;
+
+
+
+
+
+
+
+
+include("misc.inc");
+$cxn = mysqli_connect($host,$user,$passwd,$dbname)
+  or die("cannot connect to mysql db");
+
+$sql="SELECT * FROM phone_book
+	WHERE mob LIKE '%$_POST[mob]%'
+OR landline LIKE '%$_POST[landline]%'
+";
+$result = mysqli_query($cxn,$sql)
+  or die("Couldn't execute search query.");
+$num=mysqli_num_rows($result);
+
+if(@sizeof($blanks) > 0 || @sizeof($errors) > 0 || $num > 0) 
+  {
+    /* redisplay form */ 
+    if (@sizeof($blanks) > 0)
+      {
+	echo "<h2 align='center'>You didn't fill in one or more required
+  fields. You must enter:</h2>";
+	
+	/* display list of missing information */
+	echo "<table align='center' BORDER='0'>
+  	<tr>
+	    <td>";
+	foreach($blanks as $value)
+	  {
+	    echo "$labels[$value], ";
+	  }
+	echo "</td></tr></table><br>";
+      }
+    if(@sizeof($errors) > 0)
+      {
+	echo "<h2 align='center'>following values filled seems to be incorrect:</h2>";
+	
+	/* display list of incorrect information */
+	echo "<table align='center' BORDER='0'>
+	  <tr>		
+	    <td>";
+	foreach($errors as $value)
+	  {
+	    echo "{$labels[$value]}, ";
+	  }
+	echo "</td></tr></table><br>";
+      }
+    if($num > 0)
+      {
+	$sql3 = "SELECT * FROM phone_book
+		WHERE 
+		mob LIKE '%$_POST[mob]%'
+AND landline LIKE '%$_POST[landline]%'
+";
+
+	$result3 = mysqli_query($cxn,$sql3)
+	  or die("Couldn't execute select query.");
+	
+	echo "<h3 align='center'>Matching entries for :</h3>";
+	echo "<h4 align='center'>Mobile : $_POST[mob]  or  Residential : $_POST[landline]</h5>
+
+<table align='center'>
+  <tr>
+    <th>First Name&nbsp&nbsp&nbsp</th>
+    <th>Middle Name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+    <th>Last Name&nbsp&nbsp&nbsp</th>
+    <th>Mobile No.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th> 
+    <th>Residential No.</th>
+  </tr>";
+    
+	while($row = mysqli_fetch_assoc($result))
+	  {
+	    extract($row);
+	    echo "<tr>\n
+           <td>$first_name</td>
+           <td>$mid_name</td>
+           <td>$last_name</td>
+           <td>$mob</td>
+           <td>$landline</td>
+           </tr>";
+	    echo "<tr><td colspan='7'></td></tr>\n";
+	  }
+    echo "</table><br>";
+      }
+    
+    echo "<form align='center'
+	    action='$_SERVER[PHP_SELF]' method='POST'>
+      <table align='center' BORDER='0'>";
+    foreach($labels as $field => $label)
+      {
+	$good_data[$field]=strip_tags(trim($_POST[$field]));
+	echo "<tr>
+          <td style='text-align: right;
+                     font-weight: bold'>
+            {$labels[$field]}
+	  </td>
+          <td>
+	    <input type='text' name='$field'
+                   size='20' maxlength='65'
+                   value='$good_data[$field]'>
+	  </td>
+        </tr>";
+      }
+    echo "<tr>
+          <td colspan='2' style='text-align: center'>
+	    <input type='submit' value='submit'>
+	  </td>
+	</tr>
+      </table>
+    </form>";
+  }
+else
+  {
+    /* DATA CLEAN and ready to be inserted */
+    include("insertdata.php");
+  }
+?>
+<?php
+require("../user/footer.php");
+?>
+
+/* if(isset($blanks)) */
+/*   { */
+/*     $message_new = "The following fields are blank. */
+/*          Please enter the required information: "; */
+/*     foreach($blanks as $value) */
+/*       { */
+/*         $message_new .= "$value, "; */
+/*       } */
+/*   } */
+
+
+/* if(@is_array($errors)) */
+/*   { */
+/*     $message_new = ""; */
+/*     foreach($errors as $value) */
+/*       { */
+/* 	$message_new .= $value." Please try */
+/*                                    again<br />"; */
+/*       } */
+/*   } */

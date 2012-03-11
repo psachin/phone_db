@@ -1,0 +1,87 @@
+<?php
+session_start();
+
+if (@$_SESSION["auth"] != "yes")
+  {
+    header("Location: ../login.php");
+    exit();
+  }
+else 
+  require("../user/header.php");
+?>
+<?php
+/*
+  Program name: process_data.php
+  Description: Program checks all the form fields for
+  blank fields.
+*/
+?>
+
+<?php
+
+ /* setup array */
+include ("array.php");  
+
+foreach($_POST as $field => $value)
+  {
+    
+    /*  Check blanks except mid_name and landline no. */
+    include ("check_blank.php");
+    
+    /* check names */
+    include ("check_names.php");
+    
+    /* check numbers */
+    include ("check_number.php");
+    
+  }  /* end of foreach loop for $_POST */
+
+/*
+  display error msg for 
+  any blank or incorrect input value.
+*/
+
+if(@sizeof($blank_array) > 0 || @sizeof($bad_format) > 0) 
+  {
+    include ("display_error.php");
+    
+    /* redisplay form */ 
+    echo "<p>"; 
+    echo "<form align='center'
+	    action='$_SERVER[PHP_SELF]' method='POST'>
+      <table align='center' BORDER='0'>";
+    foreach($labels as $field => $label)
+      {
+	$good_data[$field]=strip_tags(trim($_POST[$field]));
+	echo "<tr>
+          <td style='text-align: right;
+                     font-weight: bold'>
+            {$labels[$field]}
+	  </td>
+          <td>
+	    <input type='text' name='$field'
+                   size='25' maxlength='65'
+                   value='$good_data[$field]'>
+	  </td>
+        </tr>";
+      }
+    echo "<tr>
+          <td colspan='2' style='text-align: center'>
+	    <input type='submit'
+                   value='Re-submit'>
+	  </td>
+	</tr>
+      </table>
+    </form>";
+    exit();
+  }
+else
+  {
+    include ("user_form.php");
+  }
+
+?>
+<?php
+require("../user/footer.php");
+?>
+

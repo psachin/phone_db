@@ -1,0 +1,1 @@
+<img src="images/gimp/heading.png" width="200" height="20">

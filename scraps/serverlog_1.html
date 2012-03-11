@@ -1,0 +1,700 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0050)http://www.pctools.com/guides/registry/detail/293/ -->
+<HTML><HEAD><TITLE>Show Computer Manufacturer and Support Information at Registry Guide for Windows</TITLE>
+<META http-equiv=content-type content=text/html;charset=UTF-8>
+<META 
+content="_Huge success_sachin_This tip lets you include company and support information on the System Properties page in Control Panel. This is especially useful if you run a computer store and want your customers to be reminded where they bought their PC and where to get technical support." 
+name=description>
+<META 
+content="windows registry, regedit, system registry, regedt32, regedit.exe, window, microsoft windows, windows 98, windows nt, windows 2000, windows xp, windows 95, windows ce, windows me, pocket pc, millennium, edition, 2k, winme, win2k, win32, x-box, xbox, tweaks, hacks, tweaking, hacking, cable modem, dsl, adsl, xdsl, modem, broadband, speed tweaks, guide, tutorials, edit, editor, editing, troubleshooting, troubleshoot, restoring, restore, backup, error, fault, incorrect, hacks, secret, programming, command line, policy editor, inf file, cleaner, checker, corrupt, tutorial, help, faq, support, clean, tool, repair, deleting, settings, batch, computer, pc, internet, speed" 
+name=keywords><LINK media="screen, projection" 
+href="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/pctools.css" 
+type=text/css rel=stylesheet>
+<SCRIPT 
+src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/pctools.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/urchin.js" 
+type=text/javascript>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+function new_uGC(l,n,s) {
+if((l == "" && n == _uccn+"=") || (l == "" && n == _ucsr+"=")) {
+   if(getRef(_uccn) != "") {
+      l = up+"?"+_uccn+"="+getRef(_uccn);
+   }
+}
+
+if (!l || l=="" || !n || n=="" || !s || s=="") return "-";
+	var i,i2,i3,c="-";
+	i=l.indexOf(n);
+        if(n == _ucsr+"=" && i == "-1" && getRef(_uccn) != "") {
+           return "legacy";
+        } 
+	i3=n.indexOf("=")+1;
+	if (i > -1) {
+		i2=l.indexOf(s,i); if (i2 < 0) { i2=l.length; }
+		c=l.substring((i+i3),i2);
+	}
+	return c;
+}
+var old_uGC = _uGC; 
+var _uGC= new_uGC; 
+
+var uri = new Object();
+getURL(uri);
+_uacct = "UA-1490218-1";
+if(getRef() != "") {
+   _uccn="ref";
+}
+if(getParam('utm_campaign') != "") {
+   _uccn="utm_campaign";
+}
+_udn="pctools.com";
+var up = uri.path;
+up = up.replace(/[/]*$/g,'');
+if(up.search(/^\//) < 0) { up='/'+up;}
+if(up.search(/\/$/) < 0) { up=up+"/";}
+urchinTracker(up);
+</SCRIPT>
+
+<SCRIPT 
+src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/authenticate.js" 
+type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.2900.3268" name=GENERATOR></HEAD>
+<BODY id=pctoolsbody>
+<DIV id=ps></DIV><!--<script language="JavaScript" src="/res/js/apd.js"></script>-->
+<SCRIPT 
+type=text/javascript>
+	var authenticated = 0;
+	var pr_auth = 0;
+</SCRIPT>
+
+<CENTER><!--<script language="JavaScript" src="/res/js/menu.js"></script>-->
+<TABLE id=main cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD width=5><IMG alt="" 
+      src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+    <TD style="BACKGROUND: url(/res/images/c2_bg.gif) repeat-x 0px 0px">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/c2.gif"></TD>
+          <TD align=right><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/c2_1.gif"></TD></TR></TBODY></TABLE></TD>
+    <TD width=5><IMG alt="" 
+      src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD></TR>
+  <TR>
+    <TD style="BACKGROUND: url(/res/images/c1_bg.gif) repeat-y 0px 0px" 
+    vAlign=top align=left><IMG alt="" 
+      src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/c1.gif"></TD>
+    <TD vAlign=top bgColor=white><!-- site start-->
+      <SCRIPT type=text/javascript>
+function select_language() {
+	change_to = document.getElementById('lang').value;
+	if(change_to != "") {
+		document.location.href=change_to;
+	}
+}
+</SCRIPT>
+
+      <TABLE style="BACKGROUND: url(/res/images/s2.gif) no-repeat right top" 
+      cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width=7 height=91 rowSpan=2><IMG height=91 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/s1.gif" 
+            width=7 border=0></TD>
+          <TD style="BACKGROUND: url(/res/images/bg_head.gif) repeat-x left top" 
+          align=left rowSpan=2><A href="http://www.pctools.com/"><IMG 
+            height=70 alt="PC Tools - Essential tools for your PC" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/logo.gif" 
+            width=260></A></TD>
+          <TD style="TEXT-ALIGN: center"></TD></TR>
+        <TR>
+          <TD align=right width=233>
+            <FORM style="MARGIN: 0px" action=/guides/registry/detail/293/ 
+            method=post><IMG height=33 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=16 border=0> </FORM></TD></TR></TBODY></TABLE>
+      <TABLE style="WIDTH: 100%" cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD 
+          style="BACKGROUND: url(/res/images/bg_menu.gif) repeat-x 0px 0px; WIDTH: 7px; TEXT-ALIGN: left"><IMG 
+            alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/m1.gif"></TD>
+          <TD style="BACKGROUND: url(/res/images/bg_menu.gif) repeat-x 0px 0px"><!-- menu start-->
+            <SCRIPT language=JavaScript1.2 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/stmenu.js" 
+            type=text/javascript></SCRIPT>
+
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width=8><IMG height=26 alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/m2.gif" 
+                  width=8 border=0></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_menu1.gif) repeat-x 0px 0px" 
+                width=4><IMG height=1 alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+                  width=1 border=0></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_menu1.gif) repeat-x 0px 0px" 
+                align=left>
+                  <SCRIPT type=text/javascript>
+stm_bm(["menu0bd5",600,"/res/images/","blank.gif",0,"","",0,0,0,0,50,1,0,0,"","",0,0,1,0,"default","hand","/res/js/menu/"],this);
+stm_bp("p0",[0,4,0,0,0,2,0,7,100,"",-2,"",-2,90,0,0,"#7F7F7F","#FFFFFF","",3,0,0,"#999999"]);
+			stm_ai("p0i0",[0,"Guides","","",-1,-1,0,"/guides/",	"_self","","","","",0,25,0,"","",0,0,0,1,1,"#FFFFFF",1,"#FFFFFF",1,"bg_menu1.gif","bg_menu1_on.gif",3,3,0,0,"#000000","#FFFFFF","#FFFFFF","#FFFFFF","bold 8pt Verdana","bold 8pt Verdana",0,0],71,25);
+				stm_bpx("p1","p0",	[1,4,0,0,0,5,0,0,100,"",-2,"",-2,90,0,0,"#7F7F7F","#eee","",3,1,1]);
+stm_aix("p1i0","p0i0",[0,"Registry Guide",	"","",-1,-1,0,"/guides/registry/",	"_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p1i1","p0i0",[0,"Security Guide",	"","",-1,-1,0,"/guides/security/",	"_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p1i2","p0i0",[0,"Software Guide",	"","",-1,-1,0,"/guides/software/",	"_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p1i3","p0i0",[0,"Scripting Guide",	"","",-1,-1,0,"/guides/scripting/",	"_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p1i4","p0i0",[0,"Driver Guide",	"","",-1,-1,0,"/guides/drivers/",	"_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p1i5","p0i0",[0,"Search",	"","",-1,-1,0,"/guides/search/",	"_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ep();
+stm_aix("p0i1","p0i0",[0,"Products","","",-1,-1,0,"/consumer/products/","_self","","","","",0,25,0,"","",0,0,0,1,1,"#FFFFFF",1,"#FFFFFF",1,"bg_menu1.gif","bg_menu1_on.gif",3,3,0,0,"#000000","#FFFFFF","#FFFFFF","#FFFFFF","bold 8pt Verdana","bold 8pt Verdana",0,0],83,25);
+stm_bpx("p2","p0",[1,4,0,0,0,5,0,0,100,"",-2,"",-2,90,0,0,"#7F7F7F","#eee","",3,1,1]);
+stm_aix("p2i0","p0i0",[0,"<div>Home &amp; Home Office</"+"div>","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ai("p2i1",[6,1,"#000000","",-1,-1,0]);
+stm_aix("p2i2","p0i0",[0,"Spyware Doctor","","",-1,-1,0,"/spyware-doctor/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i3","p0i0",[0,"Spyware Doctor with AntiVirus","","",-1,-1,0,"/spyware-doctor-antivirus/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i4","p0i0",[0,"PC Tools AntiVirus","","",-1,-1,0,"/free-antivirus/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i5","p0i0",[0,"Registry Mechanic","","",-1,-1,0,"/registry-mechanic/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i6","p0i0",[0,"PC Tools Internet Security","","",-1,-1,0,"/internet-security/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i7","p0i0",[0,"File Recover","","",-1,-1,0,"/file-recover/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i8","p0i0",[0,"Privacy Guardian","","",-1,-1,0,"/privacy-guardian/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i9","p0i0",[0,"Spam Monitor","","",-1,-1,0,"/spam-monitor/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i10","p0i0",[0,"Desktop Maestro","","",-1,-1,0,"/desktop-maestro/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i11","p0i0",[0,"PC Tools Firewall Plus","","",-1,-1,0,"/firewall/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i12","p0i0",[0,"ThreatFire","","",-1,-1,0,"http://www.threatfire.com/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i13","p0i0",[0,"<div><br></"+"div><div>Business Solutions</"+"div>","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p2i14","p0i0",[0,"","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ai("p2i15",[6,1,"#000000","",-1,-1,0]);
+stm_aix("p2i16","p0i0",[0,"Spyware Doctor","","",-1,-1,0,"/spyware-doctor-enterprise/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ep();
+
+stm_aix("p0i2","p0i1",[0,"Download","","",-1,-1,0,"/product/download/","_self","","","","",0,25,0,"","",0,0,0,1,1,"#FFFFFF",1,"#FFFFFF",1,"bg_menu1.gif","bg_menu1_on.gif",3,3,0,0,"#000000","#FFFFFF","#FFFFFF","#FFFFFF","bold 8pt Verdana","bold 8pt Verdana",0,0],83,25);
+stm_bpx("p3","p0",[1,4,0,0,0,5,0,0,100,"",-2,"",-2,90,0,0,"#7F7F7F","#eee","",3,1,1]);
+stm_aix("p3i0","p0i0",[0,"<div>Home &amp; Home Office</"+"div>","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ai("p3i1",[6,1,"#000000","",-1,-1,0]);
+stm_aix("p3i2","p0i0",[0,"Spyware Doctor","","",-1,-1,0,"/spyware-doctor/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i3","p0i0",[0,"Spyware Doctor with AntiVirus","","",-1,-1,0,"/spyware-doctor-antivirus/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i4","p0i0",[0,"PC Tools AntiVirus","","",-1,-1,0,"/free-antivirus/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i5","p0i0",[0,"PC Tools Internet Security","","",-1,-1,0,"/internet-security/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i6","p0i0",[0,"Registry Mechanic","","",-1,-1,0,"/registry-mechanic/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i7","p0i0",[0,"File Recover","","",-1,-1,0,"/file-recover/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i8","p0i0",[0,"Privacy Guardian","","",-1,-1,0,"/privacy-guardian/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i9","p0i0",[0,"Spam Monitor","","",-1,-1,0,"/spam-monitor/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i10","p0i0",[0,"Desktop Maestro","","",-1,-1,0,"/desktop-maestro/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i11","p0i0",[0,"PC Tools Firewall Plus","","",-1,-1,0,"/firewall/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i12","p0i0",[0,"ThreatFire","","",-1,-1,0,"http://www.threatfire.com/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p3i13","p0i0",[0,"<div><br></"+"div><div>Business Solutions</"+"div>","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ai("p3i14",[6,1,"#000000","",-1,-1,0]);
+stm_aix("p3i15","p0i0",[0,"Spyware Doctor","","",-1,-1,0,"/spyware-doctor-enterprise/download/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ep();
+
+stm_aix("p0i3","p0i2",[0,"Purchase","","",-1,-1,0,"/product/purchase/","_self","","","","",0,25,0,"","",0,0,0,1,1,"#FFFFFF",1,"#FFFFFF",1,"bg_menu1.gif","bg_menu1_on.gif",3,3,0,0,"#000000","#FFFFFF","#FFFFFF","#FFFFFF","bold 8pt Verdana","bold 8pt Verdana",0,0],83,25);
+stm_bpx("p4","p0",[1,4,0,0,0,5,0,0,100,"",-2,"",-2,90,0,0,"#7F7F7F","#eee","",3,1,1]);
+stm_aix("p4i0","p0i0",[0,"<div>Home &amp; Home Office</"+"div>","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ai("p4i1",[6,1,"#000000","",-1,-1,0]);
+stm_aix("p4i2","p0i0",[0,"Spyware Doctor","","",-1,-1,0,"/spyware-doctor/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i3","p0i0",[0,"Spyware Doctor with AntiVirus","","",-1,-1,0,"/spyware-doctor-antivirus/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i4","p0i0",[0,"PC Tools Internet Security","","",-1,-1,0,"/internet-security/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i5","p0i0",[0,"PC Tools AntiVirus","","",-1,-1,0,"/anti-virus/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i6","p0i0",[0,"Registry Mechanic","","",-1,-1,0,"/registry-mechanic/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i7","p0i0",[0,"File Recover","","",-1,-1,0,"/file-recover/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i8","p0i0",[0,"Privacy Guardian","","",-1,-1,0,"/privacy-guardian/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i9","p0i0",[0,"Spam Monitor","","",-1,-1,0,"/spam-monitor/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i10","p0i0",[0,"Desktop Maestro","","",-1,-1,0,"/desktop-maestro/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i11","p0i0",[0,"ThreatFire","","",-1,-1,0,"http://www.threatfire.com/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p4i12","p0i0",[0,"<div><br></"+"div><div>Business Solutions</"+"div>","","",-1,-1,0,"","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ai("p4i13",[6,1,"#000000","",-1,-1,0]);
+stm_aix("p4i14","p0i0",[0,"Spyware Doctor","","",-1,-1,0,"/spyware-doctor-enterprise/purchase/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ep();
+
+stm_aix("p0i4","p0i3",[0,"Support","","",-1,-1,0,"/contact/support/","_self","","","","",0,25,0,"","",0,0,0,1,1,"#FFFFFF",1,"#FFFFFF",1,"bg_menu1.gif","bg_menu1_on.gif",3,3,0,0,"#000000","#FFFFFF","#FFFFFF","#FFFFFF","bold 8pt Verdana","bold 8pt Verdana",0,0],77,25);
+stm_bpx("p5","p0",[1,4,0,0,0,5,0,0,100,"",-2,"",-2,90,0,0,"#7F7F7F","#eee","",3,1,1]);
+stm_aix("p5i0","p0i0",[0,"Online Support","","",-1,-1,0,"/contact/support/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p5i1","p0i0",[0,"Lost Code","","",-1,-1,0,"/lostcode/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ep();
+
+stm_aix("p0i5","p0i4",[0,"Company","","",-1,-1,0,"/company/","_self","","","","",0,25,0,"","",0,0,0,1,1,"#FFFFFF",1,"#FFFFFF",1,"bg_menu1.gif","bg_menu1_on.gif",3,3,0,0,"#000000","#FFFFFF","#FFFFFF","#FFFFFF","bold 8pt Verdana","bold 8pt Verdana",0,0],77,25);
+stm_bpx("p6","p0",[1,4,0,0,0,5,0,0,100,"",-2,"",-2,90,0,0,"#7F7F7F","#eee","",3,1,1]);
+stm_aix("p6i0","p0i0",[0,"Awards","","",-1,-1,0,"/company/awards/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p6i1","p0i0",[0,"Careers","","",-1,-1,0,"/careers/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p6i2","p0i0",[0,"Community Forum","","",-1,-1,0,"/forum/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p6i3","p0i0",[0,"Contact","","",-1,-1,0,"/contact/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p6i4","p0i0",[0,"Labs","","",-1,-1,0,"/labs/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p6i5","p0i0",[0,"News","","",-1,-1,0,"/news/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p6i6","p0i0",[0,"Partners","","",-1,-1,0,"/partners/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_aix("p6i7","p0i0",[0,"Press Room","","",-1,-1,0,"/press-room/","_self","","","","",0,0,0,"","",0,0,0,0,2,"#EAEAEA",0,"#CCCCCC",0,"","",3,3,0,0,"#000000","#FFFFFF","#333333","#333333"],"100%",0);
+stm_ep();
+
+stm_ep();
+stm_em();
+</SCRIPT>
+                  <NOSCRIPT><A style="FONT-WEIGHT: bold; COLOR: #ffffff" 
+                  href="http://www.pctools.com/guides/">Guides</A>&nbsp;&nbsp;&nbsp;<A 
+                  style="FONT-WEIGHT: bold; COLOR: #ffffff" 
+                  href="http://www.pctools.com/consumer/products/">Products</A>&nbsp;&nbsp;&nbsp;<A 
+                  style="FONT-WEIGHT: bold; COLOR: #ffffff" 
+                  href="http://www.pctools.com/product/download/">Download</A>&nbsp;&nbsp;&nbsp;<A 
+                  style="FONT-WEIGHT: bold; COLOR: #ffffff" 
+                  href="http://www.pctools.com/product/purchase/">Purchase</A>&nbsp;&nbsp;&nbsp;<A 
+                  style="FONT-WEIGHT: bold; COLOR: #ffffff" 
+                  href="http://www.pctools.com/contact/support/">Support</A>&nbsp;&nbsp;&nbsp;<A 
+                  style="FONT-WEIGHT: bold; COLOR: #ffffff" 
+                  href="http://www.pctools.com/company/">Company</A>&nbsp;&nbsp;&nbsp;</NOSCRIPT> 
+                </TD>
+                <TD id=wizkid 
+                style="BACKGROUND: url(/res/images/bg_menu1.gif) repeat-x 0px 0px; TEXT-ALIGN: right"><IMG 
+                  height=1 alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+                  width=1 border=0>
+                  <SCRIPT type=text/javascript>
+function toggle_searchbox() {
+	if (document.getElementById) {
+		var theBox = document.getElementById("searchbox");
+		theBox.style.display = theBox.style.display == "none" ? "block" : "none";
+	}
+}
+</SCRIPT>
+                   <SPAN id=nav_questions><A 
+                  style="FONT-WEIGHT: bold; COLOR: white" 
+                  onclick="toggle_searchbox(); return false;" 
+                  href="http://www.pctools.com/guides/search/">Search <IMG 
+                  style="VERTICAL-ALIGN: middle" alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/white_arrow_down.png"></A></SPAN> 
+
+                  <DIV style="POSITION: relative; TEXT-ALIGN: left">
+                  <DIV id=searchbox 
+                  style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; DISPLAY: none; Z-INDEX: 15; RIGHT: -8px; BORDER-LEFT: black 1px solid; WIDTH: 225px; BORDER-BOTTOM: black 1px solid; POSITION: absolute; TOP: 6px; BACKGROUND-COLOR: rgb(25,117,209)">
+                  <H2 
+                  style="BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: white 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0pt; BORDER-LEFT: white 1px solid; COLOR: white; PADDING-TOP: 3px; BORDER-BOTTOM: white 1px solid">Search 
+                  Guides</H2>
+                  <FORM 
+                  style="BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 0pt; BORDER-LEFT: white 1px solid; PADDING-TOP: 3px; BACKGROUND-COLOR: rgb(196,196,204)" 
+                  action=/guides/search/ method=get><INPUT name=query><INPUT class=button type=submit value=Search name=submit_query></FORM>
+                  <DIV 
+                  style="BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: white 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; BORDER-LEFT: white 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: rgb(196,196,204)"><A 
+                  href="http://www.pctools.com/guides/search/">Advanced 
+                  Search</A></DIV></DIV></DIV></TD>
+                <TD width=8><IMG height=26 alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/m3.gif" 
+                  width=8 border=0></TD></TR></TBODY></TABLE><!-- menu end--></TD>
+          <TD 
+          style="BACKGROUND: url(/res/images/bg_menu.gif) repeat-x 0px 0px; WIDTH: 7px; TEXT-ALIGN: right"><IMG 
+            alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/m1.gif"></TD></TR>
+        <TR>
+          <TD><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width=3><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/mt1.gif"></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_mt.gif) repeat-x 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD width=3><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/mt2.gif"></TD></TR></TBODY></TABLE></TD>
+          <TD><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD></TR></TBODY></TABLE><!-- menu end-->
+      <DIV id=spacer></DIV><!-- subhead start--><!-- subhead end-->
+      <DIV id=spacer></DIV>
+      <TABLE style="OVERFLOW: hidden; HEIGHT: 246px" cellSpacing=0 cellPadding=0 
+      width="100%">
+        <TBODY>
+        <TR vAlign=top>
+          <TD width=7><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+          <TD width=155>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#f3f3f3>
+              <TBODY>
+              <TR>
+                <TD width=4><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_1.gif"></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_4_1.gif) repeat-x 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD width=4><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_2.gif"></TD></TR>
+              <TR>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_4.gif) repeat-y 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD>
+                  <DIV class=header>Features</DIV>
+                  <DIV class=sidebox_content>
+                  <UL 
+                  style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: inside; LIST-STYLE-IMAGE: url(/res/images/arrow3.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left">
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/guides/security/">Security 
+                    Guide</A> 
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/guides/software/">Software 
+                    Guide</A> 
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/guides/scripting/">Scripting 
+                    Guide</A> 
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/guides/drivers/">Driver 
+                    Guide</A></LI></UL>
+                  <HR>
+
+                  <UL 
+                  style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: inside; LIST-STYLE-IMAGE: url(/res/images/arrow3.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left">
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/forum/">Support Forums</A> 
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/newsletter/">Newsletters</A> 
+                    </LI></UL>
+                  <UL 
+                  style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: inside; LIST-STYLE-IMAGE: url(/res/images/arrow3.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left">
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/guides/article/id/1/">Registry 
+                    Tutorial</A> 
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/registry-mechanic/insight/">Registry 
+                    Insight</A> </LI></UL>
+                  <HR>
+
+                  <UL 
+                  style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: inside; LIST-STYLE-IMAGE: url(/res/images/arrow3.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left">
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/tweak-manager/">Tweak 
+                    Manager</A> 
+                    <LI 
+                    style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em"><A 
+                    href="http://www.pctools.com/registry-mechanic/">Registry 
+                    Mechanic</A></LI></UL></DIV></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_2.gif) repeat-y 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD></TR>
+              <TR>
+                <TD><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_4.gif"></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_3.gif) repeat-x 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_3.gif"></TD></TR></TBODY></TABLE>
+            <DIV id=spacer></DIV>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#f3f3f3>
+              <TBODY>
+              <TR>
+                <TD width=4><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_1.gif"></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_4_1.gif) repeat-x 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD width=4><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_2.gif"></TD></TR>
+              <TR>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_4.gif) repeat-y 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD>
+                  <DIV class=header></DIV>
+                  <DIV class=sidebox_content>
+                  <SCRIPT type=text/javascript> document.write('<img src="/res/images/guides/icons/printer_small.gif" alt="" height="16" width="16">&nbsp;<a href="javascript:window.print();">Print this</a><br><img src="/res/images/guides/icons/email_small.gif" alt="" height="16" width="16">&nbsp;<a href="mailto:?subject=PC%20Guides%20for%20Windows&reg;%20Article&body=http://www.pctools.com/guides/registry/detail/293/">E-mail this</a><br><img src="/res/images/guides/icons/favorites_small.gif" alt="" height="16" width="16">&nbsp;<a href="javascript:window.external.AddFavorite(\'http://www.pctools.com/guides/registry/detail/293/\', document.title)">Bookmark</a>'); </SCRIPT>
+                  </DIV></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_2.gif) repeat-y 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD></TR>
+              <TR>
+                <TD><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_4.gif"></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_3.gif) repeat-x 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_3.gif"></TD></TR></TBODY></TABLE>
+            <DIV id=spacer></DIV>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#f3f3f3>
+              <TBODY>
+              <TR>
+                <TD width=4><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_1.gif"></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_4_1.gif) repeat-x 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD width=4><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_2.gif"></TD></TR>
+              <TR>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_4.gif) repeat-y 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD>
+                  <DIV class=header>Newsletter</DIV>
+                  <DIV class=sidebox_content>
+                  <DIV class=center style="MARGIN: 0px">Receive regular Windows® 
+                  updates
+                  <FORM action=http://www.pctools.com/newsletter/subscribe/ 
+                  method=post><INPUT style="WIDTH: 90%" name=email> <INPUT class=button type=submit value="Join Now!" name=submit> 
+                  <INPUT type=hidden value=1 name=submitted> <INPUT type=hidden 
+                  value=pctools name=product> </FORM>Your privacy is ensured by 
+                  our <A 
+                  href="http://www.pctools.com/info/privacypolicy/">privacy 
+                  policy</A></DIV></DIV></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_2.gif) repeat-y 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD></TR>
+              <TR>
+                <TD><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_4.gif"></TD>
+                <TD 
+                style="BACKGROUND: url(/res/images/bg_cont_r_3.gif) repeat-x 0px 0px"><IMG 
+                  alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+                <TD><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cont_r_3.gif"></TD></TR></TBODY></TABLE>
+            <DIV id=spacer></DIV></TD><!-- content border start-->
+          <TD>
+            <DIV id=main_content style="PADDING-TOP: 0px" align=left>
+            <SCRIPT type=text/javascript>
+function popuphelp (page, section) {
+  window.open('/guides/help/'+page+'.php#'+section,'help','width=300,height=300,toolbar=no,scrollbars=yes,menubar=no,status=no')
+}
+</SCRIPT>
+            <A href="http://www.pctools.com/guides/registry/">Registry Home</A> 
+            &gt; <A 
+            href="http://www.pctools.com/guides/registry/id/1/">Windows</A> &gt; 
+            <A 
+            href="http://www.pctools.com/guides/registry/id/14/">Troubleshooting</A> 
+
+            <DIV style="MARGIN-TOP: 10px; MARGIN-LEFT: 5px">
+            <P><B>Show Computer Manufacturer and Support Information</B> <I>(All 
+            Windows) <SPAN class=ok>Popular</SPAN></I></P>
+            <P>This tip lets you include company and support information on the 
+            System Properties page in Control Panel. This is especially useful 
+            if you run a computer store and want your customers to be reminded 
+            where they bought their PC and where to get technical support.</P>
+            <TABLE width="100%">
+              <TBODY>
+              <TR>
+                <TD vAlign=center><IMG alt="" 
+                  src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/cogsani32.gif"></TD>
+                <TD vAlign=center><B>This tweak can be easily applied using 
+                  WinGuides Tweak Manager</B>.<BR><A 
+                  href="http://www.pctools.com/tweak-manager/"><U><B>Download a 
+                  free trial now!</B></U></A></TD></TR></TBODY></TABLE>
+            <P>To add the manufacturer and support information you need to 
+            create two new files in the Windows system directly, normally 
+            "C:\WINDOWS\SYSTEM" for Windows 95, 98 and Me and 
+            "C:\WINNT\SYSTEM32" for Windows NT and 2000. 
+            <P>The first file is a text file called "OEMINFO.INI". To create the 
+            file open notepad and copy the template below, make any changes and 
+            save the file in the System directory. 
+            <P>OEMINFO.INI Template 
+            <P><PRE>[General]
+Manufacturer=Your Company, Inc.
+Model=Your Computer Model
+SupportURL=http://your.support.site/
+LocalFile=c:\your\local\support\file.htm
+
+[Support Information]
+Line1=first line of support information
+Line2=second line
+Line3=third line
+Line4=fourth line
+...
+LineN=nth line
+; Create as many lines as you need by incrementing the Line number
+</PRE>
+            <P>The other file you need to create is a logo file. This is a 
+            standard Windows bitmap file (172 x 172 pixels), saved as 
+            "OEMLOGO.BMP" in the Windows System directory. 
+            <P>Once you have created both these files open System Properties 
+            from Control Panel and your company information and logo will be 
+            displayed. The details you entered in the [Support Information] 
+            section will show up when you click on the Support Information 
+            button.</P>
+            <P><I><B>Note:</B> To display a logo you must create a 172x172 
+            (pixel) bitmap image and save it as OEMLOGO.BMP in the Windows 
+            system directory.</I></P>
+            <P>&gt;&gt; <B>Recommended Download</B> - check, repair and optimize 
+            your registry now with <A 
+            href="http://www.pctools.com/registry-mechanic/">Registry 
+            Mechanic</A> &lt;&lt;</P></DIV>
+            <P class=center>Last modified: May 19, 2002</P></DIV><!-- content border end--></TD>
+          <TD width=7><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD></TR></TBODY></TABLE>
+      <TABLE style="CLEAR: both; MARGIN-TOP: 2em" cellSpacing=0 cellPadding=0 
+      width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width=7><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1 border=0></TD>
+          <TD width=4><IMG height=24 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/bottom_menu_guides_c1.png" 
+            width=4 border=0></TD>
+          <TD width=4 bgColor=#cccccc><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1 border=0></TD>
+          <TD class=menu noWrap bgColor=#cccccc>More Guides »</TD>
+          <TD class=menu noWrap bgColor=#cccccc><A 
+            href="http://www.pctools.com/guides/security/">Security Guide</A></TD>
+          <TD class=menu noWrap bgColor=#cccccc><A 
+            href="http://www.pctools.com/forum/">Support Forums</A></TD>
+          <TD class=menu noWrap bgColor=#cccccc><A 
+            href="http://www.pctools.com/guides/software/">Software Guide</A></TD>
+          <TD class=menu noWrap bgColor=#cccccc><A 
+            href="http://www.pctools.com/guides/scripting/">Scripting 
+          Guide</A></TD>
+          <TD class=menu noWrap bgColor=#cccccc><A 
+            href="http://www.pctools.com/guides/drivers/">Driver Guide</A></TD>
+          <TD class=menu noWrap bgColor=#cccccc><A 
+            href="http://www.pctools.com/guides/search/">Search</A></TD>
+          <TD align=right bgColor=#cccccc><IMG height=24 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/bottom_menu_guides_c2.png" 
+            width=4 border=0></TD>
+          <TD align=right width=7><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1 border=0></TD></TR></TBODY></TABLE>
+      <DIV id=spacer></DIV><!-- bottom menu start -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width=7><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1></TD>
+          <TD width=4><IMG height=24 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/bottom_menu_c1.gif" 
+            width=4></TD>
+          <TD width=4 bgColor=#ababb1><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1></TD>
+          <TD class=menu noWrap bgColor=#ababb1><A 
+             href="http://www.pctools.com/">Home</A></TD>
+          <TD class=menu noWrap bgColor=#ababb1><A 
+            href="http://www.pctools.com/product/download/">Download</A></TD>
+          <TD class=menu noWrap bgColor=#ababb1><A 
+            href="http://www.pctools.com/product/purchase/">Purchase</A></TD>
+          <TD class=menu noWrap bgColor=#ababb1><A 
+            href="http://www.pctools.com/contact/support/">Support</A></TD>
+          <TD class=menu noWrap bgColor=#ababb1><A 
+            href="http://www.pctools.com/partners/">Partners</A></TD>
+          <TD class=menu noWrap bgColor=#ababb1><A 
+            href="http://www.pctools.com/company/">Company</A></TD>
+          <TD class=menu noWrap bgColor=#ababb1><A 
+            href="http://www.pctools.com/contact/">Contact</A></TD>
+          <TD align=right bgColor=#ababb1><IMG height=24 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/bottom_menu_c2.gif" 
+            width=4></TD>
+          <TD align=right width=7><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1></TD></TR></TBODY></TABLE><!-- bottom menu end -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD height=3><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width=4><IMG height=4 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/s4.gif" 
+            width=4></TD>
+          <TD><IMG height=1 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif" 
+            width=1></TD>
+          <TD align=right width=4><IMG height=4 alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/s3.gif" 
+            width=4></TD></TR></TBODY></TABLE><!-- site end--></TD>
+    <TD style="BACKGROUND: url(/res/images/c3_bg.gif) repeat-y 0px 0px" 
+    vAlign=top align=left><IMG alt="" 
+      src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/c3.gif"></TD></TR>
+  <TR>
+    <TD width=5><IMG alt="" 
+      src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD>
+    <TD style="BACKGROUND: url(/res/images/c4_bg.gif) repeat-x 0px 0px">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/c4.gif"></TD>
+          <TD align=right><IMG alt="" 
+            src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/c4_1.gif"></TD></TR></TBODY></TABLE></TD>
+    <TD width=5><IMG alt="" 
+      src="Show Computer Manufacturer and Support Information at Registry Guide for Windows_files/p.gif"></TD></TR>
+  <TR vAlign=bottom>
+    <TD colSpan=3>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD width=250>&nbsp;</TD>
+          <TD class=copy align=middle>Copyright © 1998-2008 PC Tools. All 
+            rights Reserved.</TD>
+          <TD class=copy align=right width=250><A 
+            href="http://www.pctools.com/info/privacypolicy/"><FONT 
+            color=white>Privacy Policy</FONT></A> | <A 
+            href="http://www.pctools.com/info/legalnotice/"><FONT 
+            color=white>Legal 
+  Notice</FONT></A>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR><BR></CENTER><NOSCRIPT>
+<CENTER><A style="COLOR: #ffffff" 
+href="http://www.pctools.com/uk/guides/registry/detail/293/">English 
+(UK)</A>&nbsp;&nbsp;&nbsp;<A style="COLOR: #ffffff" 
+href="http://www.pctools.com/de/guides/registry/detail/293/">Deutsch</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/es/guides/registry/detail/293/">Español</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/fr/guides/registry/detail/293/">Français</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/it/guides/registry/detail/293/">Italiano</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/nl/guides/registry/detail/293/">Nederlands</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/ru/guides/registry/detail/293/">???????</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/br/guides/registry/detail/293/">Português do 
+Brasil</A>&nbsp;&nbsp;&nbsp;<A style="COLOR: #ffffff" 
+href="http://www.pctools.com/jp/guides/registry/detail/293/">???</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/kr/guides/registry/detail/293/">???</A>&nbsp;&nbsp;&nbsp;<A 
+style="COLOR: #ffffff" 
+href="http://www.pctools.com/pt/guides/registry/detail/293/">Português</A>&nbsp;&nbsp;&nbsp; 
+</CENTER></NOSCRIPT>
+<DIV style="DISPLAY: none"></DIV>
+<SCRIPT src="" type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+	var requester = new Array;
+	requester[0] = new ajaxObject();
+	requester[0].update('/authenticate/myaccount/');
+	requester[0].callback = function() { setMyaccountStatus(); }
+</SCRIPT>
+<!-- Page generated at 2008-02-16 15:29:55 GMT --></BODY></HTML>
